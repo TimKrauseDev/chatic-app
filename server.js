@@ -18,7 +18,6 @@ const io = new Server(server, {
 
 let connectedSockets = new Map();
 
-
 io.on("connection", (socket) => {
   console.log('socket id', socket.id);
   connectedSockets.set(socket.id, '');

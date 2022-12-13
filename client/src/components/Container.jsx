@@ -1,0 +1,1 @@
+export default ({children}) => <div class="container">{children}</div>

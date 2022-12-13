@@ -1,0 +1,82 @@
+// Helpers
+.mh-500 { max-height: 500px; min-height: 500px; overflow: auto; }
+.mh-440 { max-height: 440px; overflow: auto; }
+.mw-50 { min-width: 50px; }
+.mw-385 { max-width: 385px !important; margin: auto !important; }
+.smaller { font-size: .625rem; }
+
+
+
+// Main App
+.app-wrapper {
+	width: 100vw;
+	height: 100vh;
+	min-width: 400px;
+}
+
+.app { box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+.main { min-height: 500px; }
+
+@media(min-width: 800px) { 
+	.app { max-width: 800px !important; }
+}
+
+
+
+// Home
+.homepage-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+
+
+// Chat
+.message-item {
+	position: relative;
+
+	button {
+		display: flex;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 1.5rem;
+		padding: 0;
+		border: none;	
+
+		&:hover, &:focus { opacity: 1; }
+
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&.user {
+		button { 
+			left: 0;
+			right: inherit;
+		}
+	}
+
+	&:hover, &:focus {
+		button { opacity: 1; }
+	}
+}
+
+
+
+// Settings
+.settings-selection {
+	.form-control:focus {
+		box-shadow: none !important;
+		border-color: #ced4da;
+	}
+}

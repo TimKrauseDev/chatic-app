@@ -2,7 +2,7 @@
 
 Source code for my [Chat Application](https://chatic.timkrause.dev/).
 
-<img width="600" alt="portfolio home" src="./src/images/chatic_home.PNG">
+<img width="600" alt="Chatic Preview" src="./src/images/chatic_preview.jpg">
 
 ## Overview
 
